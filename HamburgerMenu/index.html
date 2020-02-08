@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://unpkg.com/boxicons@2.0.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand">Razor Templates</a>
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link">Privacy</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link hamburger-menu-toggle" menu>
+                        <i class="bx bx-menu h1 m-0"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hamburger-menu">
+        <div class="close-box hamburger-menu-toggle"></div>
+        <div class="menu-box">
+            <a class="hamburger-menu-toggle close-button">
+                <i class="bx bx-x h1"></i>
+            </a>
+            <ul class="hamburger-list">
+                <li class="hamburger-list-item">
+                    <a>Instalation</a>
+                </li>
+                <li class="hamburger-list-item">
+                    <a>Documentation</a>
+                </li>
+                <li class="hamburger-list-item">
+                    <a>Architecture</a>
+                </li>
+                <li class="hamburger-list-item">
+                    <a>Community</a>
+                </li>
+                <li class="hamburger-list-item">
+                    <a>About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="welcome-box">
+                <div class="message-box">
+                    <p class="message">
+                        Partial pages are files that do not take part in routing. <br>
+                        Therefore you can use any of the Razor templates.
+                    </p>
+                </div>
+                <div class="logo-box">
+                    <img class="logo" src="img/1200px-Visual_Studio_2017_Logo.svg.png" />
+                    <img class="logo" src="img/vscode-logo.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 pr-5">
+                    <p class="display-4 text-right">
+                        <i class="bx bx-add-to-queue"></i>
+                    </p>
+                    <h2 class="mb-4 underline">
+                        Creating Partial Pages
+                    </h2>
+                    <p>
+                        Nulla sit amet dictum orci. Integer fringilla purus a massa bibendum, sit amet gravida lectus
+                        hendrerit. Fusce sem nunc, fringilla sed odio sed, porta egestas nibh.
+                    </p>
+                    <a href="https://docs.microsoft.com/pl-pl/aspnet/core/mvc/views/partial?view=aspnetcore-3.1"
+                        class="pointer-event">
+                        <i class="bx bx-link"></i> Read more
+                    </a>
+                </div>
+                <div class="col-lg-4 px-5">
+                    <p class="display-4 text-right">
+                        <i class="bx bx-rename"></i>
+                    </p>
+                    <h2 class="mb-4 underline">
+                        Rendering Partial
+                    </h2>
+                    <p>
+                        Vestibulum nec elementum tortor, vitae varius est. Vivamus massa tellus, ornare in risus eget,
+                        commodo commodo nisi. Curabitur dignissim turpis justo, eget blandit lorem elementum sed.
+                    </p>
+                    <a href="https://docs.microsoft.com/pl-pl/aspnet/core/mvc/views/partial?view=aspnetcore-3.1"
+                        class="pointer-event">
+                        <i class="bx bx-link"></i> Read more
+                    </a>
+                </div>
+                <div class="col-lg-4 pr-5">
+                    <p class="display-4 text-right">
+                        <i class="bx bx-book-reader"></i>
+                    </p>
+                    <h2 class="mb-4 underline">
+                        Naming And Locating
+                    </h2>
+                    <p>
+                        Mauris vulputate erat ante, sit amet tristique nisl vulputate lobortis. Nam quis lacus ante.
+                        Proin augue nisl, auctor vel massa id, interdum pharetra mi. Phasellus vestibulum luctus auctor.
+                    </p>
+                    <a href="https://docs.microsoft.com/pl-pl/aspnet/core/mvc/views/partial?view=aspnetcore-3.1"
+                        class="pointer-event">
+                        <i class="bx bx-link"></i> Read more
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="app.js" defer></script>
+</body>
+
+</html>

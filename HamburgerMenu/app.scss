@@ -1,0 +1,232 @@
+// HEADER
+nav {
+	position: sticky !important;
+	top: 0;
+	transition: 0.4s all;
+	width: 100%;
+
+	&[background] {
+		background-color: #030031;
+
+		.navbar-brand {
+			font-size: 1.2rem;
+		}
+	}
+
+	.navbar-brand {
+		transition: 0.4s all;
+		color: white;
+		font-weight: 700;
+		font-size: 2rem;
+		position: relative;
+		/* Underline */
+		&:after {
+			content: "";
+			display: block;
+			border-bottom: 5px solid white;
+			position: absolute;
+			right: 0;
+			width: 50%;
+		}
+	}
+
+	.nav-item {
+		display: flex;
+		align-items: center;
+
+		.nav-link {
+			font-weight: 500;
+			transition: 0.3s color;
+			cursor: pointer;
+			color: #8484d6;
+			position: relative;
+
+			/* Underline animation */
+			&:not([menu]):after {
+				content: "";
+				display: block;
+				border-bottom: 3px solid white;
+				width: 0;
+				position: absolute;
+				right: 0.5rem;
+				transition: 0.3s ease;
+			}
+
+			&:not([menu]):hover:after {
+				width: 50%;
+			}
+
+			&:hover {
+				color: white;
+			}
+
+			&[menu] {
+				i {
+					position: relative;
+					bottom: -5px;
+				}
+			}
+		}
+	}
+}
+.hamburger-menu {
+	$menu-width: 320px;
+
+	transition: 0.1s all;
+	z-index: -50;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: transparent;
+	opacity: 0;
+	display: flex;
+
+	&[show] {
+		z-index: 1000;
+		opacity: 1;
+		background-color: rgba(0, 0, 0, 0.4);
+
+		.close-box {
+			width: calc(100% - #{$menu-width});
+		}
+
+		.menu-box {
+			width: $menu-width;
+		}
+	}
+
+	.close-box {
+		width: 0;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.menu-box {
+		margin-left: auto;
+		transition: 0.3s all;
+		width: 0;
+		overflow: hidden;
+		height: 100%;
+		background-color: darkblue;
+		position: relative;
+
+		.close-button {
+			transition: 0.2s all;
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			color: white;
+			font-weight: 500;
+			cursor: pointer;
+			color: #8484d6;
+
+			&:hover {
+				color: white;
+			}
+		}
+
+		.hamburger-list {
+			margin-top: 8rem;
+			list-style: none;
+
+			.hamburger-list-item {
+				margin: 1rem 0;
+
+				a {
+					transition: 0.2s all;
+					color: #8484d6;
+					font-size: 1.5rem;
+					cursor: pointer;
+					font-weight: 500;
+					position: relative;
+					&:after {
+						transition: 0.2s ease;
+						content: "";
+						position: absolute;
+						left: 0;
+						display: block;
+						border-bottom: 4px solid white;
+						width: 0;
+					}
+
+					&:hover:after {
+						width: 50%;
+					}
+
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+// SITE LANDING PAGE
+body {
+    background-color: #05026B;
+    color: #adbdea;
+
+    p {
+        text-align: left;
+    }
+}
+
+.container {
+    max-width: 1400px;
+}
+
+
+.welcome-box {
+    width: 100%;
+    height: 55vh;
+    font-size: 2.4rem;
+    font-weight: 200;
+
+    .message-box {
+        width: 100%;
+
+        .message {
+            margin-top: 8rem;
+            text-align: center;
+        }
+    }
+
+    .logo-box {
+        width: 100%;
+        margin-top: 4rem;
+        text-align: center;
+
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+    }
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: aliceblue;
+
+    &:after {
+        content: '';
+        display: block;
+        border-bottom: 5px solid white;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        bottom: -10px;
+    }
+}
+
+a {
+    color: #007bff;
+
+    &:hover {
+        color: #60aaff;
+        text-decoration: none;
+    }
+}

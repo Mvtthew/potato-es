@@ -1,0 +1,245 @@
+nav {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  width: 100%;
+}
+
+nav[background] {
+  background-color: #030031;
+}
+
+nav[background] .navbar-brand {
+  font-size: 1.2rem;
+}
+
+nav .navbar-brand {
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  position: relative;
+  /* Underline */
+}
+
+nav .navbar-brand:after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid white;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-item .nav-link {
+  font-weight: 500;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+  cursor: pointer;
+  color: #8484d6;
+  position: relative;
+  /* Underline animation */
+}
+
+nav .nav-item .nav-link:not([menu]):after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid white;
+  width: 0;
+  position: absolute;
+  right: 0.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+nav .nav-item .nav-link:not([menu]):hover:after {
+  width: 50%;
+}
+
+nav .nav-item .nav-link:hover {
+  color: white;
+}
+
+nav .nav-item .nav-link[menu] i {
+  position: relative;
+  bottom: -5px;
+}
+
+.hamburger-menu {
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
+  z-index: -50;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hamburger-menu[show] {
+  z-index: 1000;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hamburger-menu[show] .close-box {
+  width: calc(100% - 320px);
+}
+
+.hamburger-menu[show] .menu-box {
+  width: 320px;
+}
+
+.hamburger-menu .close-box {
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hamburger-menu .menu-box {
+  margin-left: auto;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: darkblue;
+  position: relative;
+}
+
+.hamburger-menu .menu-box .close-button {
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  color: #8484d6;
+}
+
+.hamburger-menu .menu-box .close-button:hover {
+  color: white;
+}
+
+.hamburger-menu .menu-box .hamburger-list {
+  margin-top: 8rem;
+  list-style: none;
+}
+
+.hamburger-menu .menu-box .hamburger-list .hamburger-list-item {
+  margin: 1rem 0;
+}
+
+.hamburger-menu .menu-box .hamburger-list .hamburger-list-item a {
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  color: #8484d6;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+}
+
+.hamburger-menu .menu-box .hamburger-list .hamburger-list-item a:after {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  border-bottom: 4px solid white;
+  width: 0;
+}
+
+.hamburger-menu .menu-box .hamburger-list .hamburger-list-item a:hover:after {
+  width: 50%;
+}
+
+.hamburger-menu .menu-box .hamburger-list .hamburger-list-item a:hover {
+  color: white;
+}
+
+body {
+  background-color: #05026B;
+  color: #adbdea;
+}
+
+body p {
+  text-align: left;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.welcome-box {
+  width: 100%;
+  height: 55vh;
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+.welcome-box .message-box {
+  width: 100%;
+}
+
+.welcome-box .message-box .message {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.welcome-box .logo-box {
+  width: 100%;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.welcome-box .logo-box .logo {
+  height: 120px;
+  width: auto;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: aliceblue;
+}
+
+.underline:after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid white;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  bottom: -10px;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #60aaff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=app.css.map */

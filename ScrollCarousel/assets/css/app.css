@@ -1,0 +1,17 @@
+.scroll-carousel {
+  width: 100%;
+  height: 500px;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  position: relative;
+  display: -webkit-box;
+}
+
+.scroll-carousel .scroll-carousel-image {
+  scroll-snap-align: start;
+  display: -webkit-box;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=app.css.map */

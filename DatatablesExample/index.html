@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatables Example project</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <!-- Datatables -->
+    <link rel="stylesheet" href="/assets/css/dataTables.bootstrap4.min.css">
+
+</head>
+
+<body>
+    <main id="app">
+        <div class="container mt-5">
+            <div class="mb-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Numer wpisu" onkeyup="tabelka1.filterBy(0, this.value)">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Imiona" onkeyup="tabelka1.filterBy(1, this.value)">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Nazwisko" onkeyup="tabelka1.filterBy(2, this.value)">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <input class="form-control" type="date" placeholder="Data Wpisy" onkeyup="tabelka1.filterBy(3, this.value)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table id="table1"></table>
+        </div>
+    </main>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+
+</body>
+
+
+
+
+</html>
